@@ -1,0 +1,15 @@
+{
+  "UserUrls": {
+    "GetBySearchKey": "https://localhost:44336/api/user?searchKey={Value}",
+    "GatAllUsers": "https://localhost:44336/api/user/get_all",
+    "PostRegister": "https://localhost:44336/api/user/register",
+    "PostUserChangeStatus": "https://localhost:44336/api/user/change_user_status/{userId}",
+    "PutUpdateUser": "https://localhost:44336/api/user/edit_user/{userId}",
+    "DeleteUser": "https://localhost:44336/api/user/remove_user/{userId}",
+    "PostAdminCrateorUser": "https://localhost:44336/api/user/admin_register_user"
+  },
+  "Authentication": {
+    "PostLoginUser": "https://localhost:44336/api/auth/login",
+    "GetLogoutUser": "https://localhost:44336/api/auth/signout"
+  }
+}
