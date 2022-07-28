@@ -1,4 +1,6 @@
 ﻿using TaskManagerSolution.Common.DateTool;
+using TaskManagerSolution.Domain.Entities.CommonEntities;
+using TaskManagerSolution.Domain.Entities.TaskManagmentEntities;
 
 namespace TaskManagerSolution.Domain.Entities.AuthEntities;
 
@@ -14,4 +16,7 @@ public class User {
     public bool IsActive { get; set; }
     public virtual Role Role { get; set; }
     public int RoleId { get; set; }
+    public string? Token { get; set; }
+    public virtual ICollection<UserTask> UserTasks { get; set; }
+    public virtual ICollection<Comment> Comments { get; set; }
 }

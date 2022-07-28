@@ -11,6 +11,7 @@
     <Folder Include="Interfaces\IFasde\" />
     <Folder Include="Services\Commands\RoleService\CreateRole\" />
     <Folder Include="Services\Commands\RoleService\DeleteRole\" />
+    <Folder Include="Services\Commands\RoleService\UpdateRole\" />
     <Folder Include="Services\Commands\UserServices\ChangeUserStatus\" />
     <Folder Include="Services\Commands\UserServices\DeleteUser\" />
     <Folder Include="Services\Commands\UserServices\RegisterUserbyAdmin\" />

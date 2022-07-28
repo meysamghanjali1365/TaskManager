@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <Folder Include="Entities\AuthEntities\" />
+    <Folder Include="Entities\CommonEntities\" />
+    <Folder Include="Entities\TaskManagmentEntities\" />
     <Folder Include="Entities\SysLog\" />
   </ItemGroup>
 

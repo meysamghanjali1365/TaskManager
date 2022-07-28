@@ -2,6 +2,7 @@
 using TaskManagerSolution.Application.Interfaces.IFasde;
 using TaskManagerSolution.Application.Services.Commands.RoleService.CreateRole;
 using TaskManagerSolution.Application.Services.Commands.RoleService.DeleteRole;
+using TaskManagerSolution.Application.Services.Commands.RoleService.UpdateRole;
 using TaskManagerSolution.Application.Services.Queries.RoleService.GetAllRole;
 
 namespace TaskManagerSolution.Application.Services.Fasade;
@@ -21,17 +22,21 @@ public class RoleFasade : IRoleFasade {
         }
     }
     private IRemoveRoleService _roleRemoveService;
-
     public IRemoveRoleService RemoveRoleService {
         get {
             return _roleRemoveService = _roleRemoveService ?? new RemoveRoleService(_context);
         }
     }
     private IGetAllRoleService _getAllRoleService;
-
     public IGetAllRoleService GetAllRoleService {
         get {
             return _getAllRoleService = _getAllRoleService ?? new GetAllRoleService(_context);
+        }
+    }
+    private IUpdateRoleService _updateRoleService;
+    public IUpdateRoleService UpdateRoleService {
+        get {
+            return _updateRoleService = _updateRoleService ?? new UpdateRoleService(_context);
         }
     }
 }
