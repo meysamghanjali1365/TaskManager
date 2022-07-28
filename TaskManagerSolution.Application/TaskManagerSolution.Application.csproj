@@ -10,6 +10,7 @@
     <Folder Include="Interfaces\IContexts\" />
     <Folder Include="Interfaces\IFasde\" />
     <Folder Include="Services\Commands\RoleService\CreateRole\" />
+    <Folder Include="Services\Commands\RoleService\DeleteRole\" />
     <Folder Include="Services\Commands\UserServices\ChangeUserStatus\" />
     <Folder Include="Services\Commands\UserServices\DeleteUser\" />
     <Folder Include="Services\Commands\UserServices\RegisterUserbyAdmin\" />
@@ -17,6 +18,7 @@
     <Folder Include="Services\Commands\UserServices\UserAuth\" />
     <Folder Include="Services\Commands\UserServices\RegisterUser\" />
     <Folder Include="Services\Fasade\" />
+    <Folder Include="Services\Queries\RoleService\GetAllRole\" />
   </ItemGroup>
 
   <ItemGroup>
