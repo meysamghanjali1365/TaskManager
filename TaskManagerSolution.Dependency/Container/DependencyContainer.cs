@@ -17,5 +17,6 @@ public class DependencyContainer {
             option.UseSqlServer(configuration.GetConnectionString("Default"));
         });
         services.AddScoped<IUserFasade, UserFasade>();
+        services.AddScoped<IRoleFasade, RoleFasade>();
     }
 }

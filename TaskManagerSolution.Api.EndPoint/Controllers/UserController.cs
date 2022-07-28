@@ -17,7 +17,7 @@ namespace TaskManagerSolution.Api.EndPoint.Controllers {
         }
 
         [HttpGet]
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [Route("/api/user/get_all")]
         public async Task<IActionResult> GetUser(string? searchKey) {
             var res = _user.GetGetUserService.GetUsers(searchKey).Result;

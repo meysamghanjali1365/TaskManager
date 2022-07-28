@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="Interfaces\IContexts\" />
     <Folder Include="Interfaces\IFasde\" />
+    <Folder Include="Services\Commands\RoleService\CreateRole\" />
     <Folder Include="Services\Commands\UserServices\ChangeUserStatus\" />
     <Folder Include="Services\Commands\UserServices\DeleteUser\" />
     <Folder Include="Services\Commands\UserServices\RegisterUserbyAdmin\" />
