@@ -5,14 +5,14 @@ using TaskManagerSolution.Dependency.Container;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddAuthentication(options => {
-    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-}).AddCookie(options => {
-    options.LoginPath = new PathString("/Authentication/Signin");
-    options.ExpireTimeSpan = TimeSpan.FromMinutes(5.0);
-});
+//builder.Services.AddAuthentication(options => {
+//    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+//    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+//    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+//}).AddCookie(options => {
+//    options.LoginPath = new PathString("/Authentication/Signin");
+//    options.ExpireTimeSpan = TimeSpan.FromMinutes(5.0);
+//});
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

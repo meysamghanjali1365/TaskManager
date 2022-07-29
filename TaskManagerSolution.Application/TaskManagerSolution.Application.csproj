@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="Interfaces\IContexts\" />
     <Folder Include="Interfaces\IFasde\" />
+    <Folder Include="Services\Commands\CategoryService\CreateCategory\" />
     <Folder Include="Services\Commands\RoleService\CreateRole\" />
     <Folder Include="Services\Commands\RoleService\DeleteRole\" />
     <Folder Include="Services\Commands\RoleService\UpdateRole\" />
@@ -19,6 +20,7 @@
     <Folder Include="Services\Commands\UserServices\UserAuth\" />
     <Folder Include="Services\Commands\UserServices\RegisterUser\" />
     <Folder Include="Services\Fasade\" />
+    <Folder Include="Services\Queries\CategoryService\" />
     <Folder Include="Services\Queries\RoleService\GetAllRole\" />
   </ItemGroup>
 
