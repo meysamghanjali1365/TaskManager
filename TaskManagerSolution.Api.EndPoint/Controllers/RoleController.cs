@@ -14,8 +14,8 @@ namespace TaskManagerSolution.Api.EndPoint.Controllers {
         }
 
         [HttpGet]
-        [Route("/api/role/get_roles/{key?}")]
-        public async Task<IActionResult> GetRole([Optional]string key) {
+        [Route("/api/role/get_roles")]
+        public async Task<IActionResult> GetRole(string? key) {
             var res = await _roleFasade.GetAllRoleService.GetAllRole(key);
             return Ok(res);
         }

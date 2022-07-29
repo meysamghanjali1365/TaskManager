@@ -16,8 +16,8 @@ namespace TaskManagerSolution.Api.EndPoint.Controllers.Admin {
         }
 
         [HttpGet]
-        [Route("/api/admin/get_categories/{key?}")]
-        public async Task<IActionResult> GetCategories([Optional]string key) {
+        [Route("/api/admin/get_categories/")]
+        public async Task<IActionResult> GetCategories(string? key) {
             var res = _category.GetAllCategoryService.GetCategories(key).Result;
             return Ok(res);
         }
