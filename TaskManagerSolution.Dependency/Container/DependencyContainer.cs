@@ -13,6 +13,7 @@ namespace TaskManagerSolution.Dependency.Container;
 
 public class DependencyContainer {
     public static void RegisterServices(IServiceCollection services, IConfiguration configuration) {
+        
         services.AddAuthentication(options => {
             options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
             options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;

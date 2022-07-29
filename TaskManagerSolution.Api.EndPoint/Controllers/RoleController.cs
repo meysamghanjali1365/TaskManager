@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System.Runtime.InteropServices;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TaskManagerSolution.Api.EndPoint.Models.Dtos.RoleDto;
 using TaskManagerSolution.Application.Interfaces.IFasde;
@@ -13,8 +14,8 @@ namespace TaskManagerSolution.Api.EndPoint.Controllers {
         }
 
         [HttpGet]
-        [Route("/api/role/get_roles")]
-        public async Task<IActionResult> GetRole(string? key) {
+        [Route("/api/role/get_roles/{key?}")]
+        public async Task<IActionResult> GetRole([Optional]string key) {
             var res = await _roleFasade.GetAllRoleService.GetAllRole(key);
             return Ok(res);
         }

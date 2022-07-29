@@ -20,7 +20,7 @@
     <Folder Include="Services\Commands\UserServices\UserAuth\" />
     <Folder Include="Services\Commands\UserServices\RegisterUser\" />
     <Folder Include="Services\Fasade\" />
-    <Folder Include="Services\Queries\CategoryService\" />
+    <Folder Include="Services\Queries\CategoryService\GetAllCategory\" />
     <Folder Include="Services\Queries\RoleService\GetAllRole\" />
   </ItemGroup>
 

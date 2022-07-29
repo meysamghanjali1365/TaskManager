@@ -1,6 +1,6 @@
 {
   "UserUrls": {
-    "GetBySearchKey": "https://localhost:44336/api/user?searchKey={Value}",
+    "GetBySearchKey": "https://localhost:44336/api/user/get_all/{value}",
     "GatAllUsers": "https://localhost:44336/api/user/get_all",
     "PostRegister": "https://localhost:44336/api/user/register",
     "PostUserChangeStatus": "https://localhost:44336/api/user/change_user_status/{userId}",
@@ -16,7 +16,12 @@
     "PostCreateRole": "https://localhost:44336/api/role/create_role",
     "DeleteRole": "https://localhost:44336/api/role/remove_role/{roleId}",
     "GetAllRole": "https://localhost:44336/api/role/get_roles",
-    "GetRoleBySearchKey": "https://localhost:44336/api/role/get_roles?key={value}",
+    "GetRoleBySearchKey": "https://localhost:44336/api/role/get_roles/{value}",
     "PutUpdateRole": "https://localhost:44336/api/role/edit_role/{roleId}"
-  }
+  },
+  "CategoryUrls": {
+    "PostCreateCategory": "https://localhost:44336/api/admin/create_category",
+    "GetAllCategory": "https://localhost:44336/api/admin/get_categories",
+    "GetAllCategoryBySearchKey": "https://localhost:44336/api/admin/get_categories/{value}"
+  } 
 }
